@@ -1,6 +1,12 @@
 (function() {
     'use strict';
 
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js', {
+            scope: '/'
+        });
+    }
+
     var bg = document.getElementById('bg');
     var callme = document.getElementById('callme');
     var arrow = document.getElementById('arrow');
