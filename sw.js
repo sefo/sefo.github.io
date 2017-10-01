@@ -2,6 +2,7 @@
 
 var CACHE_NAME = 'emergency-v1';
 var urlsToCache = [
+  'index.html',
   '/assets/help.gif',
 ];
 
