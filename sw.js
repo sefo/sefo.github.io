@@ -4,6 +4,8 @@ var CACHE_NAME = 'emergency-v1';
 var urlsToCache = [
   '/',
   '/assets/help.gif',
+  '/js/main.js',
+  '/style/main.css'
 ];
 
 self.addEventListener('install', event => {
