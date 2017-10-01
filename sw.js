@@ -1,14 +1,15 @@
 'use strict';
 
+var CACHE_NAME = 'emergency-v1';
+var urlsToCache = [
+  '/assets/help.gif',
+];
+
 self.addEventListener('install', event => {
-    
-      function onInstall () {
-        return caches.open('static')
-          .then(cache => cache.addAll([
-            '/images/help.gif'
-          ])
-        );
-      }
-    
-      event.waitUntil(onInstall(event));
-    });
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(function(cache) {
+        return cache.addAll(urlsToCache);
+      })
+  );
+});
