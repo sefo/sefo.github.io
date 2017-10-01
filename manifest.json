@@ -11,6 +11,11 @@
         "src": "assets/big.png",
         "type": "image/png",
         "sizes": "256x256"
+      },
+      {
+        "src": "assets/huge.png",
+        "type": "image/png",
+        "sizes": "512x512"
       }
     ],
     "start_url": "/",
