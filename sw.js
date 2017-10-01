@@ -5,7 +5,7 @@ var urlsToCache = [
   '/',
   '/assets/help.gif',
   '/js/main.js',
-  '/style/main.css'
+  '/styles/main.css'
 ];
 
 self.addEventListener('install', event => {
