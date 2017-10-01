@@ -2,7 +2,7 @@
 
 var CACHE_NAME = 'emergency-v1';
 var urlsToCache = [
-  'index.html',
+  '/',
   '/assets/help.gif',
 ];
 
@@ -15,6 +15,6 @@ self.addEventListener('install', event => {
   );
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', event => {
   event.respondWith(caches.match(event.request));
 });
